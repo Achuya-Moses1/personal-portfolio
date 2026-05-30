@@ -1,89 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f4f4f4;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      background: #fff;
-      margin-bottom: 1.5rem;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-    h1, h2 {
-      margin-top: 0;
-    }
-    .projects {
-      display: grid;
-      gap: 1rem;
-    }
-    .project-card {
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 1rem;
-      background: #fafafa;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <header>
-    <h1>Personal Portfolio</h1>
-    <p>Web developer creating clean, responsive websites.</p>
+  <header class="header">
+    <a href="#home"class="logo">Moses <span>Achuya</span>
+    </a>
+<i class="bx bx-menu" id="menu-icon"></i>
+<nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="gradient-btn">Contact Me</button>
   </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Hello! I'm a developer focused on building user-friendly web experiences. I enjoy working with HTML, CSS, and JavaScript to turn ideas into polished digital products.</p>
-    </section>
-    <section>
-      <h2>Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Project One</h3>
-          <p>A modern landing page built with responsive layout and clean design.</p>
-        </div>
-        <div class="project-card">
-          <h3>Project Two</h3>
-          <p>An interactive web app with form validation and dynamic content.</p>
-        </div>
-        <div class="project-card">
-          <h3>Project Three</h3>
-          <p>A portfolio showcase optimized for desktop and mobile devices.</p>
-        </div>
+  
+  <section class="home" id="home">
+    <div class="home-content">
+<h1>Hi, it's <span>Moses</span></h1>
+<h3>
+I'm a <span>Web Developer</span>
+</h3>
+<p>
+I build modern, responsive and user-friendly websites that help businesses and individuals establish a strong online presence. Passionate about clean code and great user experiences, I enjoy turning ideas into functional digital products
+</p>
+<div class="social-icons">
+  <a href="https://www.linkedin.com/in/achuya-moses-643357225?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+  <a href="https://github.com/Achuya-Moses1" target="_blank"><i class="bx bxl-github"></i></a>
+  <a href="https://x.com/atral_ama?s=21" target="_blank"><i class="bx bxl-twitter"></i></a>
+  <a href="https://www.instagram.com/atral_ama?igsh=MXZrZzZ5YmFzazhueg==" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+</div>
+<div class="btn-group">
+  <a href="#" class="btn">Hire</a>
+  <a href="https://wa.me/qr/IVEC5DMDPMU2J1" class="btn">Contact</a>
+</div>
+    </div>
+<div class="home-img">
+  <img src="image.jpg" alt="">
+</div>
+
+  </section>
+ <section class="about" id="about">
+  <div class="about-img">
+    <img src="image.jpg" alt="">
+  </div>
+  <div class="about-content">
+    <h2>About <span>Me</span></h2>
+    <p>
+      I’m Moses, a web developer, AI automation enthusiast and creative designer passionate about building digital solutions. I create responsive websites, automate workflows and design engaging content that helps brands and businesses grow online.
+
+I enjoy combining technology and creativity to turn ideas into functional, user-friendly experiences. I’m constantly learning, building, and exploring new ways to create meaningful impact through digital innovation
+    </p>
+    <a href="#" class="btn">Read More</a>
+  </div>
+ </section>
+ <section class="services" id="services">
+<h2 class="heading">Services</h2>
+<div class="services-container">
+  <div class="service-box">
+    <div class="service-info">
+      <i class="bx bxl-figma"></i>
+      <h4>UI / UX Design</h4>
+      <p>I design intuitive and visually appealing user interfaces that provide seamless user experiences. My focus is creating designs that are easy to use, engaging, and aligned with both user needs and business goals</p>
+    </div>
+  </div>
+  <div class="service-box">
+    <div class="service-info">
+      <i class="bx bx-code"></i>
+      <h4>Frontend Development</h4>
+      <p>I build responsive and user-friendly websites using modern web technologies. My focus is on creating functional, visually appealing, and optimized websites that provide great user experiences across all devices</p>
+    </div>
+</div>
+  <div class="service-box">
+    <div class="service-info">
+      <i class="bx bx-code-curly"></i>
+      <h4>Backend Development</h4>
+      <p>I specialize in backend development, building robust and scalable server-side applications using modern programming languages and frameworks. My focus is on creating efficient, secure, and maintainable systems that power dynamic web applications</p>
+    </div>
+  </div>
+ </section>
+ <section class="projects" id="projects">
+<h2 class="heading">Projects</h2>
+<div class="projects-box">
+<div class="project-card">
+  <img src="Automation.jpeg" alt="">
+  <h3>Ai Automation</h3>
+  <p>I build AI-powered automation solutions that streamline repetitive tasks, improve efficiency, and help businesses save time. By integrating intelligent workflows, I create systems that work smarter and deliver better results</p>
+<div class="btn">Review Project</div>
+</div>
+<div class="project-card">
+  <img src="Landing2.jpeg" alt="">
+  <h3>Landing Page</h3>
+  <p>I build responsive and user-friendly landing pages that convert visitors into customers. My focus is on creating compelling designs that drive engagement and achieve business objectives</p>
+<div class="btn">Review Project</div>
+</div>
+<div class="project-card">
+  <img src="Cards2.jpeg" alt="">
+  <h3>Social Media Design</h3>
+  <p>I create visually engaging social media and promotional designs that help brands communicate their message effectively. My focus is on producing clean, impactful visuals that capture attention and strengthen brand identity</p>
+<div class="btn">Review Project</div>
+</div>
+<div class="project-card">
+  <img src="Portfolio.jpg" alt="">
+  <h3>Portfolio Website</h3>
+  <p>I build responsive and user-friendly portfolio websites that showcase creative work and skills. My focus is on creating compelling designs that highlight achievements and attract potential clients or employers</p>
+<div class="btn">Review Project</div>
+</div>
+</div>
+
+ </section>
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="https://formspree.io/f/xgoqbeqd" method="POST">
+  <div class="input-group">
+    <div class="input-box">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+    </div>
+
+      <div class="input-box">
+      <input type="number" placeholder="Phone Number" required>
+      <input type="text" placeholder="Subject" required>
       </div>
-    </section>
-    <section>
-      <h2>Contact</h2>
-      <p>You can reach me via email at <a href="mailto:hello@example.com">hello@example.com</a>.</p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2026 Personal Portfolio</p>
+    </div>
+
+  <div class="input-group-2">
+    <textarea name="" id=""
+     placeholder="Your Message"
+     cols="30" rows="10" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </div>
+</form>
+  </section>
+
+  <footer class="footer">
+    <div class="social-icons">
+  <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+  <a href="#"><i class="bx bxl-github"></i></a>
+  <a href="#"><i class="bx bxl-twitter"></i></a>
+  <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+</div>
+<ul class="list">
+  <li>
+    <a href="#">FAQ</a>
+  </li>
+   <li>
+    <a href="#services">Services</a>
+  </li>
+    <li>
+      <a href="#about">About</a>
+    </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+</ul>
+<p class="copyright">
+ © Achuya Moses | All Rights Reserved
+</p>
   </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
+    
